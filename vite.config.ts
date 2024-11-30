@@ -6,6 +6,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: './', // Add this line to fix deployment paths
   build: {
     outDir: 'dist',
     rollupOptions: {
